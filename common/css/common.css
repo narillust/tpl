@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+html {
+  overflow: auto;
+  font-size: 62.5%;
+}
+body {
+  position: relative;
+  background: #fdfdfd;
+  font-family: "メイリオ", Meiryo, Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 12px;
+  font-size: 1.4rem;
+  color: #222;
+  line-height: 1.2;
+  word-break: break-all;
+  -webkit-text-size-adjust: none;
+}
+a {
+  color: #999;
+}
+a:hover {
+  color: #CCC;
+}
+img {
+  vertical-align: middle;
+}
+ul {
+  list-style-type: none;
+}
+ol {
+  margin-left: 20px;
+}
+/*---ForFireFoxLink------------------*/
+a:focus {
+  outline: none;
+}
+a {
+  color: #444;
+  text-decoration: none;
+}
+a:hover {
+  color: #444;
+  text-decoration: underline;
+}
+pre.prettyprint {
+  background: #fff;
+  overflow: auto;
+  padding: 10px;
+}
+.module_code {
+  padding: 15px 0 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.module_code.first {
+  padding-top: 50px;
+}
+.template-box {
+  padding: 30px 0 80px;
+}
+.title {
+  border-bottom: 1px dotted #ddd;
+  margin-bottom: 40px;
+  padding: 20px 0 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+#page-top {
+  position: fixed;
+  right: 10px;
+  background: url(../img/panel-attack-t.png) no-repeat center top;
+  background-size: 30%;
+  width: 80px;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.footer {
+  background: #bbb;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}

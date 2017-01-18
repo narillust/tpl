@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/* =========================================
+menu
+========================================= */
+.menu--cf:before,
+.menu--cf:after {
+  content: "\0020";/* "\0020"は半角スペース */
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.menu--cf:after {
+  clear: both;
+}
+.menu--cf {
+  /zoom: 1;
+}
+/* menu item */
+.menu__item--float {
+  float: left;
+  margin-left: 10px;
+}
+.menu__item--float:first-child {
+  margin-left: 0;
+}
+/* menu line */
+.menu__item--float--line {
+  float: left;
+  margin-left: 10px;
+  padding-left: 9px;
+  border-left: 1px solid #CCC;
+}
+.menu__item--float--line:first-child {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: none;
+}
+/* menu icon left */
+.menu__link--icon-left--date {
+  padding-left: 10px;
+  background: url(../img/icon-date.png) no-repeat left center;
+}
+/* menu button */
+.menu__item--float--button {
+  float: left;
+  margin-left: 1px;
+}
+.menu__item--float--button:first-child {
+  margin-left: 0;
+}
+.menu__link--button {
+  display: block;
+  width: 150px;
+  padding: 10px;
+  background: #EEE;
+  text-align: center;
+  text-decoration: none;
+}
+.menu__link--button:hover {
+  background-color: #DDD;
+  text-decoration: none;
+}
+/* menu button icon left */
+.menu__link--icon-left--arrow {
+  padding-left: 20px;
+  background: url(../img/arrow.png) no-repeat left center;
+}
+/* menu button icon top date */
+.menu__link--icon-top--date {
+  display: block;
+  padding: 50px 20px 10px 20px;
+  background: #EEE url(../img/icon-date.png) no-repeat center 30%;
+}
+.menu__link--icon-top--date:hover {
+  background-color: #DDD;
+  text-decoration: none;
+}
+
+/* =========================================
+news
+========================================= */
+.news--cf:before,
+.news--cf:after {
+  content: "\0020";/* "\0020"は半角スペース */
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.news--cf:after {
+  clear: both;
+}
+.news--cf {
+  /zoom: 1;
+  border-bottom: 1px dotted #CCC;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.news__date--float {
+  float: left;
+  width: 7em;
+}
+.news__body {
+  margin-left: 7em;
+  overflow: hidden;
+}
+/* entry box */
+.entry-box--cf:before,
+.entry-box--cf:after {
+  content: "\0020";/* "\0020"は半角スペース */
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.entry-box--cf:after {
+  clear: both;
+}
+.entry-box--cf {
+  /zoom: 1;
+  display: block;
+  position: relative;
+}
+.entry-box__figure--float {
+  display: block;
+  float: left;
+  margin-right: 7px;
+  vertical-align: top;
+  text-align: center;
+  background: #EEE;
+}
+.entry-box__caption {
+  display: block;
+  overflow: hidden;
+}
+.entry-box__caption__title {
+  font-size: 1.6em;
+}
+.entry-box__caption__body {
+  margin-top: 10px;
+}
