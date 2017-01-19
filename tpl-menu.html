@@ -26,7 +26,7 @@
 
 <div class="template-box">
 <h2 class="title">Normal Menu</h2>
-<ul class="menu--cf">
+<ul class="menu">
   <li class="menu__item--float"><a href="#" class="menu__link">MENU01</a></li>
   <li class="menu__item--float"><a href="#" class="menu__link">MENU01</a></li>
   <li class="menu__item--float"><a href="#" class="menu__link">MENU01</a></li>
@@ -35,7 +35,7 @@
 <br>
 <div class="module_code first">HTML:</div>
 <pre class="prettyprint">
-&lt;ul class="menu--cf"&gt;
+&lt;ul class="menu"&gt;
   &lt;li class="menu__item--float"&gt;&lt;a href="#" class="menu__link"&gt;MENU01&lt;/a&gt;&lt;/li&gt;
   &lt;li class="menu__item--float"&gt;&lt;a href="#" class="menu__link"&gt;MENU01&lt;/a&gt;&lt;/li&gt;
   &lt;li class="menu__item--float"&gt;&lt;a href="#" class="menu__link"&gt;MENU01&lt;/a&gt;&lt;/li&gt;
@@ -44,17 +44,17 @@
 </pre>
 <div class="module_code">CSS:</div>
 <pre class="prettyprint">
-.menu--cf:before,
-.menu--cf:after {
+.menu:before,
+.menu:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.menu--cf:after {
+.menu:after {
   clear: both;
 }
-.menu--cf {
+.menu {
   /zoom: 1;
 }
 .menu__item--float {
@@ -69,7 +69,7 @@
 
 <div class="template-box">
 <h2 class="title">Separator line Menu</h2>
-<ul class="menu--cf">
+<ul class="menu">
   <li class="menu__item--float--line"><a href="#" class="menu__link">MENU02</a></li>
   <li class="menu__item--float--line"><a href="#" class="menu__link">MENU02</a></li>
   <li class="menu__item--float--line"><a href="#" class="menu__link">MENU02</a></li>
@@ -78,7 +78,7 @@
 <br>
 <div class="module_code first">HTML:</div>
 <pre class="prettyprint">
-&lt;ul class="menu--cf"&gt;
+&lt;ul class="menu"&gt;
   &lt;li class="menu__item--float--line"&gt;&lt;a href="#" class="menu__link"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
   &lt;li class="menu__item--float--line"&gt;&lt;a href="#" class="menu__link"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
   &lt;li class="menu__item--float--line"&gt;&lt;a href="#" class="menu__link"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
@@ -87,17 +87,17 @@
 </pre>
 <div class="module_code">CSS:</div>
 <pre class="prettyprint">
-.menu--cf:before,
-.menu--cf:after {
+.menu:before,
+.menu:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.menu--cf:after {
+.menu:after {
   clear: both;
 }
-.menu--cf {
+.menu {
   /zoom: 1;
 }
 .menu__item--float--line {
@@ -116,7 +116,7 @@
 
 <div class="template-box">
 <h2 class="title">Icon Menu</h2>
-<ul class="menu--cf">
+<ul class="menu">
   <li class="menu__item--float"><a href="#" class="menu__link--icon-left--date">MENU03</a></li>
   <li class="menu__item--float"><a href="#" class="menu__link--icon-left--date">MENU03</a></li>
   <li class="menu__item--float"><a href="#" class="menu__link--icon-left--date">MENU03</a></li>
@@ -125,7 +125,7 @@
 <br>
 <div class="module_code first">HTML:</div>
 <pre class="prettyprint">
-&lt;ul class="menu--cf"&gt;
+&lt;ul class="menu"&gt;
   &lt;li class="menu__item--float"&gt;&lt;a href="#" class="menu__link--icon-left--date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
   &lt;li class="menu__item--float"&gt;&lt;a href="#" class="menu__link--icon-left--date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
   &lt;li class="menu__item--float"&gt;&lt;a href="#" class="menu__link--icon-left--date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
@@ -134,17 +134,17 @@
 </pre>
 <div class="module_code">CSS:</div>
 <pre class="prettyprint">
-.menu--cf:before,
-.menu--cf:after {
+.menu:before,
+.menu:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.menu--cf:after {
+.menu:after {
   clear: both;
 }
-.menu--cf {
+.menu {
   /zoom: 1;
 }
 .menu__link--icon-left--date {
@@ -156,7 +156,7 @@
 
 <div class="template-box">
 <h2 class="title">Button Menu</h2>
-<ul class="menu--cf">
+<ul class="menu">
   <li class="menu__item--float--button"><a href="#" class="menu__link--button">MENU04</a></li>
   <li class="menu__item--float--button"><a href="#" class="menu__link--button">MENU04</a></li>
   <li class="menu__item--float--button"><a href="#" class="menu__link--button">MENU04</a></li>
@@ -165,7 +165,7 @@
 <br>
 <div class="module_code first">HTML:</div>
 <pre class="prettyprint">
-&lt;ul class="menu--cf"&gt;
+&lt;ul class="menu"&gt;
   &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--button"&gt;MENU04&lt;/a&gt;&lt;/li&gt;
   &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--button"&gt;MENU04&lt;/a&gt;&lt;/li&gt;
   &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--button"&gt;MENU04&lt;/a&gt;&lt;/li&gt;
@@ -174,17 +174,17 @@
 </pre>
 <div class="module_code">CSS:</div>
 <pre class="prettyprint">
-.menu--cf:before,
-.menu--cf:after {
+.menu:before,
+.menu:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.menu--cf:after {
+.menu:after {
   clear: both;
 }
-.menu--cf {
+.menu {
   /zoom: 1;
 }
 .menu__item--float--button {
@@ -210,7 +210,7 @@
 
 <div class="template-box">
 <h2 class="title">Button Menu Icon</h2>
-<ul class="menu--cf">
+<ul class="menu">
   <li class="menu__item--float--button"><a href="#" class="menu__link--button"><span class="menu__link--icon-left--arrow">MENU05</span></a></li>
   <li class="menu__item--float--button"><a href="#" class="menu__link--button"><span class="menu__link--icon-left--arrow">MENU05</span></a></li>
   <li class="menu__item--float--button"><a href="#" class="menu__link--button"><span class="menu__link--icon-left--arrow">MENU05</span></a></li>
@@ -219,7 +219,7 @@
 <br>
 <div class="module_code first">HTML:</div>
 <pre class="prettyprint">
-&lt;ul class="menu--cf"&gt;
+&lt;ul class="menu"&gt;
   &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--button"&gt;&lt;span class="menu__link--icon-left--arrow"&gt;MENU05&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--button"&gt;&lt;span class="menu__link--icon-left--arrow"&gt;MENU05&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--button"&gt;&lt;span class="menu__link--icon-left--arrow"&gt;MENU05&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -228,17 +228,17 @@
 </pre>
 <div class="module_code">CSS:</div>
 <pre class="prettyprint">
-.menu--cf:before,
-.menu--cf:after {
+.menu:before,
+.menu:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.menu--cf:after {
+.menu:after {
   clear: both;
 }
-.menu--cf {
+.menu {
   /zoom: 1;
 }
 .menu__item--float--button {
@@ -268,7 +268,7 @@
 
 <div class="template-box">
 <h2 class="title">Panel Menu</h2>
-<ul class="menu--cf">
+<ul class="menu">
   <li class="menu__item--float--button"><a href="#" class="menu__link--icon-top--date">MENU06</a></li>
   <li class="menu__item--float--button"><a href="#" class="menu__link--icon-top--date">MENU06</a></li>
   <li class="menu__item--float--button"><a href="#" class="menu__link--icon-top--date">MENU06</a></li>
@@ -277,7 +277,7 @@
 <br>
 <div class="module_code first">HTML:</div>
 <pre class="prettyprint">
-&lt;ul class="menu--cf"&gt;
+&lt;ul class="menu"&gt;
   &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--icon-top--date"&gt;MENU06&lt;/a&gt;&lt;/li&gt;
   &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--icon-top--date"&gt;MENU06&lt;/a&gt;&lt;/li&gt;
   &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--icon-top--date"&gt;MENU06&lt;/a&gt;&lt;/li&gt;
@@ -286,17 +286,17 @@
 </pre>
 <div class="module_code">CSS:</div>
 <pre class="prettyprint">
-.menu--cf:before,
-.menu--cf:after {
+.menu:before,
+.menu:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.menu--cf:after {
+.menu:after {
   clear: both;
 }
-.menu--cf {
+.menu {
   /zoom: 1;
 }
 .menu__item--float--button {

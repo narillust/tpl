@@ -3,17 +3,17 @@
 /* =========================================
 menu
 ========================================= */
-.menu--cf:before,
-.menu--cf:after {
+.menu:before,
+.menu:after {
   content: "\0020";/* "\0020"は半角スペース */
   display: block;
   height: 0;
   overflow: hidden;
 }
-.menu--cf:after {
+.menu:after {
   clear: both;
 }
-.menu--cf {
+.menu {
   /zoom: 1;
 }
 /* menu item */
