@@ -50,11 +50,11 @@ menu
   margin-left: 0;
 }
 .menu__link--button {
-  display: block;
-  width: 150px;
-  padding: 10px;
   background: #EEE;
-  text-align: center;
+  display: table-cell;
+  width: 150px;
+  height: 40px;
+  vertical-align: middle;
   text-decoration: none;
 }
 .menu__link--button:hover {
@@ -63,16 +63,21 @@ menu
 }
 /* menu button icon left */
 .menu__link--icon-left--arrow {
-  padding-left: 20px;
-  background: url(../img/arrow.png) no-repeat left center;
+  display: block;
+  text-align: center;
+}
+.menu__link--icon-left--arrow:before {
+  content: url(../img/arrow.png);
+  margin-right: 20px;
+  height: 40px;
 }
 /* menu button icon top date */
-.menu__link--icon-top--date {
+.menu__link--icon-top {
   display: block;
   padding: 50px 20px 10px 20px;
   background: #EEE url(../img/icon-date.png) no-repeat center 30%;
 }
-.menu__link--icon-top--date:hover {
+.menu__link--icon-top:hover {
   background-color: #DDD;
   text-decoration: none;
 }
@@ -133,7 +138,7 @@ news
   overflow: hidden;
 }
 .entry-box__caption__title {
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 .entry-box__caption__body {
   margin-top: 10px;
