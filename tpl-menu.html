@@ -12,6 +12,7 @@
 <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
 <!-- css -->
 <link rel="stylesheet" type="text/css" href="common/css/reset.css">
+<link rel="stylesheet" type="text/css" href="common/css/layout.css">
 <link rel="stylesheet" type="text/css" href="common/css/prettify.css">
 <link rel="stylesheet" type="text/css" href="common/css/common.css">
 <link rel="stylesheet" type="text/css" href="common/css/temp.css">
@@ -21,400 +22,488 @@
 </head>
 <body onload="prettyPrint()">
 <div class="container">
-<div style="width:960px; margin:0 auto;">
-
-
-<div class="template-box">
-<h2 class="title">Normal Menu</h2>
-<ul class="menu">
-  <li class="menu__item--float"><a href="#" class="menu__link">MENU01</a></li>
-  <li class="menu__item--float"><a href="#" class="menu__link">MENU01</a></li>
-  <li class="menu__item--float"><a href="#" class="menu__link">MENU01</a></li>
-  <li class="menu__item--float"><a href="#" class="menu__link">MENU01</a></li>
-</ul>
-<div class="module_code first">HTML:</div>
-<pre class="prettyprint">
-&lt;ul class="menu"&gt;
-  &lt;li class="menu__item--float"&gt;&lt;a href="#" class="menu__link"&gt;MENU01&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float"&gt;&lt;a href="#" class="menu__link"&gt;MENU01&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float"&gt;&lt;a href="#" class="menu__link"&gt;MENU01&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float"&gt;&lt;a href="#" class="menu__link"&gt;MENU01&lt;/a&gt;&lt;/li&gt;
+  <div style="width:960px; margin:0 auto;">
+    <div class="templateBox">
+      <h2 class="title">Normal Menu</h2>
+      <ul class="cf">
+        <li class="l-inline"><a href="#">MENU01</a></li>
+        <li class="l-inline ml-10"><a href="#">MENU01</a></li>
+        <li class="l-inline ml-10"><a href="#">MENU01</a></li>
+        <li class="l-inline ml-10"><a href="#">MENU01</a></li>
+      </ul>
+      <div class="module_code first">HTML:</div>
+      <pre class="prettyprint">
+&lt;ul class="cf"&gt;
+  &lt;li class="l-inline"&gt;&lt;a href="#"&gt;MENU01&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-10"&gt;&lt;a href="#"&gt;MENU01&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-10"&gt;&lt;a href="#"&gt;MENU01&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-10"&gt;&lt;a href="#"&gt;MENU01&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-<div class="module_code">CSS:</div>
-<pre class="prettyprint">
-.menu:before,
-.menu:after {
+      <div class="module_code">CSS:</div>
+      <pre class="prettyprint">
+/* clearfix */
+.cf:before,
+.cf:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.menu:after {
+.cf:after {
   clear: both;
 }
-.menu {
+.cf {
   /zoom: 1;
 }
-.menu__item--float {
+/* ml */
+.ml-01,
+.ml-02,
+.ml-03,
+.ml-04,
+.ml-05,
+.ml-06,
+.ml-07,
+.ml-08,
+.ml-09,
+.ml-10 {
   float: left;
-  margin-left: 10px;
 }
-.menu__item--float:first-child {
+.ml-01 { margin-left: 1px; }
+.ml-02 { margin-left: 2px; }
+.ml-03 { margin-left: 3px; }
+.ml-04 { margin-left: 4px; }
+.ml-05 { margin-left: 5px; }
+.ml-06 { margin-left: 6px; }
+.ml-07 { margin-left: 7px; }
+.ml-08 { margin-left: 8px; }
+.ml-09 { margin-left: 9px; }
+.ml-10 { margin-left: 10px; }
+.ml-01:first-child,
+.ml-10:first-child {
   margin-left: 0;
 }
-</pre>
-</div><!-- /template-box -->
 
-<div class="template-box">
-<h2 class="title">Separator line Menu</h2>
-<ul class="menu">
-  <li class="menu__item--float--line"><a href="#" class="menu__link">MENU02</a></li>
-  <li class="menu__item--float--line"><a href="#" class="menu__link">MENU02</a></li>
-  <li class="menu__item--float--line"><a href="#" class="menu__link">MENU02</a></li>
-  <li class="menu__item--float--line"><a href="#" class="menu__link">MENU02</a></li>
-</ul>
-<div class="module_code first">HTML:</div>
-<pre class="prettyprint">
-&lt;ul class="menu"&gt;
-  &lt;li class="menu__item--float--line"&gt;&lt;a href="#" class="menu__link"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float--line"&gt;&lt;a href="#" class="menu__link"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float--line"&gt;&lt;a href="#" class="menu__link"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float--line"&gt;&lt;a href="#" class="menu__link"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
+</pre>
+    </div>
+    <!-- /template-box -->
+    
+    <div class="template-box">
+      <h2 class="title">Separator line Menu</h2>
+      <ul class="cf">
+        <li class="l-inline separation"><a href="#">MENU02</a></li>
+        <li class="l-inline ml-10 separation"><a href="#">MENU02</a></li>
+        <li class="l-inline ml-10 separation"><a href="#">MENU02</a></li>
+        <li class="l-inline ml-10 separation"><a href="#">MENU02</a></li>
+      </ul>
+      <div class="module_code first">HTML:</div>
+      <pre class="prettyprint">
+&lt;ul class="cf"&gt;
+  &lt;li class="l-inline separation"&gt;&lt;a href="#"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-10 separation"&gt;&lt;a href="#"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-10 separation"&gt;&lt;a href="#"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-10 separation"&gt;&lt;a href="#"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-<div class="module_code">CSS:</div>
-<pre class="prettyprint">
-.menu:before,
-.menu:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-.menu:after {
-  clear: both;
-}
-.menu {
-  /zoom: 1;
-}
-.menu__item--float--line {
-  float: left;
-  margin-left: 10px;
+      <div class="module_code">CSS:</div>
+      <pre class="prettyprint">
+/* menu separation */
+.separation {
   padding-left: 9px;
-  border-left: 1px solid #CCC;
+  border-left: 1px solid #ccc;
 }
-.menu__item--float--line:first-child {
+.separation:first-child {
   margin-left: 0;
   padding-left: 0;
   border-left: none;
 }
 </pre>
-</div><!-- /template-box -->
-
-<div class="template-box">
-<h2 class="title">Icon Menu</h2>
-<ul class="menu">
-  <li class="menu__item--float"><a href="#" class="menu__link--icon-left--date">MENU03</a></li>
-  <li class="menu__item--float"><a href="#" class="menu__link--icon-left--date">MENU03</a></li>
-  <li class="menu__item--float"><a href="#" class="menu__link--icon-left--date">MENU03</a></li>
-  <li class="menu__item--float"><a href="#" class="menu__link--icon-left--date">MENU03</a></li>
-</ul>
-<div class="module_code first">HTML:</div>
-<pre class="prettyprint">
-&lt;ul class="menu"&gt;
-  &lt;li class="menu__item--float"&gt;&lt;a href="#" class="menu__link--icon-left--date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float"&gt;&lt;a href="#" class="menu__link--icon-left--date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float"&gt;&lt;a href="#" class="menu__link--icon-left--date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float"&gt;&lt;a href="#" class="menu__link--icon-left--date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
+    </div>
+    <!-- /template-box -->
+    
+    <div class="template-box">
+      <h2 class="title">Icon Menu</h2>
+      <ul class="cf">
+        <li class="l-inline"><a href="#" class="icon-date">MENU03</a></li>
+        <li class="l-inline ml-10"><a href="#" class="icon-date">MENU03</a></li>
+        <li class="l-inline ml-10"><a href="#" class="icon-date">MENU03</a></li>
+        <li class="l-inline ml-10"><a href="#" class="icon-date">MENU03</a></li>
+      </ul>
+      <div class="module_code first">HTML:</div>
+      <pre class="prettyprint">
+&lt;ul class="cf"&gt;
+  &lt;li class="l-inline"&gt;&lt;a href="#" class="icon-date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-10"&gt;&lt;a href="#" class="icon-date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-10"&gt;&lt;a href="#" class="icon-date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-10"&gt;&lt;a href="#" class="icon-date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-<div class="module_code">CSS:</div>
-<pre class="prettyprint">
-.menu:before,
-.menu:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-.menu:after {
-  clear: both;
-}
-.menu {
-  /zoom: 1;
-}
-.menu__link--icon-left--date {
-  padding-left: 10px;
+      <div class="module_code">CSS:</div>
+      <pre class="prettyprint">
+.icon-date:before {
   background: url(../img/icon-date.png) no-repeat left center;
+  background-size: 8px 9px;
+  display: inline-block;
+  content:"\0020";
+  width: 8px;
+  height: 9px;
+  margin-right: 0.2em;
+  position: relative;
+  top: -0.1em;
 }
 </pre>
-</div><!-- /template-box -->
-
-<div class="template-box">
-<h2 class="title">Button Menu</h2>
-<ul class="menu">
-  <li class="menu__item--float--button"><a href="#" class="menu__link--button">MENU04</a></li>
-  <li class="menu__item--float--button"><a href="#" class="menu__link--button">MENU04</a></li>
-  <li class="menu__item--float--button"><a href="#" class="menu__link--button">MENU04</a></li>
-  <li class="menu__item--float--button"><a href="#" class="menu__link--button">MENU04</a></li>
-</ul>
-<div class="module_code first">HTML:</div>
-<pre class="prettyprint">
-&lt;ul class="menu"&gt;
-  &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--button"&gt;MENU04&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--button"&gt;MENU04&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--button"&gt;MENU04&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--button"&gt;MENU04&lt;/a&gt;&lt;/li&gt;
+    </div>
+    <!-- /template-box -->
+    
+    <div class="template-box">
+      <h2 class="title">Button Menu</h2>
+      <ul class="cf">
+        <li class="l-inline"><a href="#" class="button"><span class="button-text">MENU04</span></a></li>
+        <li class="l-inline ml-01"><a href="#" class="button"><span class="button-text">MENU04</span></a></li>
+        <li class="l-inline ml-01"><a href="#" class="button"><span class="button-text">MENU04</span></a></li>
+        <li class="l-inline ml-01"><a href="#" class="button"><span class="button-text">MENU04</span></a></li>
+      </ul>
+      <div class="module_code first">HTML:</div>
+      <pre class="prettyprint">
+&lt;ul class="cf"&gt;
+  &lt;li class="l-inline"&gt;&lt;a href="#" class="button"&gt;&lt;span class="button-text"&gt;MENU04&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-01"&gt;&lt;a href="#" class="button"&gt;&lt;span class="button-text"&gt;MENU04&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-01"&gt;&lt;a href="#" class="button"&gt;&lt;span class="button-text"&gt;MENU04&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-01"&gt;&lt;a href="#" class="button"&gt;&lt;span class="button-text"&gt;MENU04&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-<div class="module_code">CSS:</div>
-<pre class="prettyprint">
-.menu:before,
-.menu:after {
-  content: "\0020";
+      <div class="module_code">CSS:</div>
+      <pre class="prettyprint">
+.button {
   display: block;
-  height: 0;
-  overflow: hidden;
-}
-.menu:after {
-  clear: both;
-}
-.menu {
-  /zoom: 1;
-}
-.menu__item--float--button {
-  float: left;
-  margin-left: 1px;
-}
-.menu__item--button:first-child {
-	margin-left: 0;
-}
-.menu__link--button {
-  display: block;
-  width: 150px;
-  padding: 10px;
-  background: #EEE;
+  background-color: #eee;
   text-align: center;
   text-decoration: none;
 }
-.menu__link--button:hover {
-  background-color: #DDD;
+.button:hover {
+  background-color: #ddd;
+  text-decoration: none;
+}
+.button-text {
+  display: table-cell;
+  vertical-align: middle;
+  height: 40px;
 }
 </pre>
-</div><!-- /template-box -->
-
-<div class="template-box">
-<h2 class="title">Button Menu Icon</h2>
-<ul class="menu">
-  <li class="menu__item--float--button"><a href="#" class="menu__link--button"><span class="menu__link--icon-left--arrow">MENU05</span></a></li>
-  <li class="menu__item--float--button"><a href="#" class="menu__link--button"><span class="menu__link--icon-left--arrow">MENU05</span></a></li>
-  <li class="menu__item--float--button"><a href="#" class="menu__link--button"><span class="menu__link--icon-left--arrow">MENU05</span></a></li>
-  <li class="menu__item--float--button"><a href="#" class="menu__link--button"><span class="menu__link--icon-left--arrow">MEN<br>U05</span></a></li>
-</ul>
-<div class="module_code first">HTML:</div>
-<pre class="prettyprint">
-&lt;ul class="menu"&gt;
-  &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--button"&gt;&lt;span class="menu__link--icon-left--arrow"&gt;MENU05&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--button"&gt;&lt;span class="menu__link--icon-left--arrow"&gt;MENU05&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--button"&gt;&lt;span class="menu__link--icon-left--arrow"&gt;MENU05&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--button"&gt;&lt;span class="menu__link--icon-left--arrow"&gt;MENU05&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    </div>
+    <!-- /template-box -->
+    
+    <div class="template-box">
+      <h2 class="title">Button Menu Icon</h2>
+      <ul class="cf">
+        <li class="l-inline"><a href="#" class="button btn-icon-al-arrow"><span class="button-text">MEN<br>
+          U05</span></a></li>
+        <li class="l-inline ml-01"><a href="#" class="button btn-icon-al-arrow"><span class="button-text">MEN<br>
+          U05</span></a></li>
+        <li class="l-inline ml-01"><a href="#" class="button btn-icon-al-arrow"><span class="button-text">MEN<br>
+          U05</span></a></li>
+        <li class="l-inline ml-01"><a href="#" class="button btn-icon-al-arrow"><span class="button-text">MEN<br>
+          U05</span></a></li>
+      </ul>
+      <div class="module_code first">HTML:</div>
+      <pre class="prettyprint">
+&lt;ul class="cf"&gt;
+  &lt;li class="l-inline"&gt;&lt;a href="#" class="button btn-icon-al-arrow"&gt;&lt;span class="button-text"&gt;MEN&lt;br&gt;U05&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-01"&gt;&lt;a href="#" class="button btn-icon-al-arrow"&gt;&lt;span class="button-text"&gt;MEN&lt;br&gt;U05&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-01"&gt;&lt;a href="#" class="button btn-icon-al-arrow"&gt;&lt;span class="button-text"&gt;MEN&lt;br&gt;U05&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-01"&gt;&lt;a href="#" class="button btn-icon-al-arrow"&gt;&lt;span class="button-text"&gt;MEN&lt;br&gt;U05&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-<div class="module_code">CSS:</div>
-<pre class="prettyprint">
-.menu:before,
-.menu:after {
-  content: "\0020";
+      <div class="module_code">CSS:</div>
+      <pre class="prettyprint">
+.button {
   display: block;
-  height: 0;
-  overflow: hidden;
-}
-.menu:after {
-  clear: both;
-}
-.menu {
-  /zoom: 1;
-}
-.menu__item--float--button {
-  float: left;
-  margin-left: 1px;
-}
-.menu__item--button:first-child {
-	margin-left: 0;
-}
-.menu__link--button {
-  display: block;
-  width: 150px;
-  padding: 10px;
-  background: #EEE;
+  background-color: #eee;
   text-align: center;
   text-decoration: none;
 }
-.menu__link--button:hover {
-  background-color: #DDD;
+.button:hover {
+  background-color: #ddd;
+  text-decoration: none;
 }
-.menu__link--icon-left--arrow {
+.btn-icon-al-arrow {
+  background: #eee url(../img/arrow.png) no-repeat 5px center;
   padding-left: 20px;
-  background: url(../img/arrow.png) no-repeat left center;
+}
+.button-text {
+  display: table-cell;
+  vertical-align: middle;
+  height: 40px;
 }
 </pre>
-</div><!-- /template-box -->
-
-<div class="template-box">
-<h2 class="title">Panel Menu</h2>
-<ul class="menu">
-  <li class="menu__item--float--button"><a href="#" class="menu__link--icon-top">MENU06</a></li>
-  <li class="menu__item--float--button"><a href="#" class="menu__link--icon-top">MENU06</a></li>
-  <li class="menu__item--float--button"><a href="#" class="menu__link--icon-top">MENU06</a></li>
-  <li class="menu__item--float--button"><a href="#" class="menu__link--icon-top">MENU06<br>MENU06</a></li>
-</ul>
-<div class="module_code first">HTML:</div>
-<pre class="prettyprint">
-&lt;ul class="menu"&gt;
-  &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--icon-top"&gt;MENU06&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--icon-top"&gt;MENU06&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--icon-top"&gt;MENU06&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="menu__item--float--button"&gt;&lt;a href="#" class="menu__link--icon-top"&gt;MENU06&lt;/a&gt;&lt;/li&gt;
+    </div>
+    <!-- /template-box -->
+    
+    <div class="template-box">
+      <h2 class="title">Panel Menu</h2>
+      <ul class="cf">
+        <li class="l-inline"><a href="#" class="button btn-icon-at-date"><span class="button-text">MENU06</span></a></li>
+        <li class="l-inline ml-03"><a href="#" class="button btn-icon-at-date"><span class="button-text">MENU06<br>
+          MENU</span></a></li>
+        <li class="l-inline ml-03"><a href="#" class="button btn-icon-at-date"><span class="button-text">MENU06</span></a></li>
+        <li class="l-inline ml-03"><a href="#" class="button btn-icon-at-date"><span class="button-text">MENU06</span></a></li>
+      </ul>
+      <div class="module_code first">HTML:</div>
+      <pre class="prettyprint">
+&lt;ul class="cf"&gt;
+  &lt;li class="l-inline"&gt;&lt;a href="#" class="button btn-icon-at-date"&gt;&lt;span class="button-text"&gt;MENU06&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-03"&gt;&lt;a href="#" class="button btn-icon-at-date"&gt;&lt;span class="button-text"&gt;MENU06&lt;br&gt;MENU&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-03"&gt;&lt;a href="#" class="button btn-icon-at-date"&gt;&lt;span class="button-text"&gt;MENU06&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-03"&gt;&lt;a href="#" class="button btn-icon-at-date"&gt;&lt;span class="button-text"&gt;MENU06&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-<div class="module_code">CSS:</div>
-<pre class="prettyprint">
-.menu:before,
-.menu:after {
-  content: "\0020";
+      <div class="module_code">CSS:</div>
+      <pre class="prettyprint">
+.button {
   display: block;
-  height: 0;
-  overflow: hidden;
-}
-.menu:after {
-  clear: both;
-}
-.menu {
-  /zoom: 1;
-}
-.menu__item--float--button {
-  float: left;
-  margin-left: 1px;
-}
-.menu__link--icon-top {
-  display: block;
-  padding: 50px 20px 10px 20px;
-  background: #EEE url(../img/icon-date.png) no-repeat center 30%;
-}
-.menu__link--icon-top:hover {
-  background-color: #DDD;
+  background-color: #eee;
+  text-align: center;
   text-decoration: none;
 }
+.button:hover {
+  background-color: #ddd;
+  text-decoration: none;
+}
+.button-text {
+  display: table-cell;
+  vertical-align: middle;
+  height: 40px;
+}
+.btn-icon-at-date:before {
+  background: url(../img/icon-date.png) no-repeat left center;
+  background-size: 8px 9px;
+  display: inline-block;
+  content:"\0020";
+  width: 8px;
+  height: 9px;
+  margin-right: 0.2em;
+  position: relative;
+  top: -0.1em;
+}
 </pre>
-</div><!-- /template-box -->
-
-<div class="template-box">
-<h2 class="title">Date List</h2>
-<div class="news--cf">
-  <p class="news__date--float">2016.12.31</p>
-  <p class="news__body"><a href="#" class="news__link">本文本文本文本文本文本文本文本文本文本文本文本文本文本文</a></p>
-</div>
-<div class="news--cf">
-  <p class="news__date--float">2016.12.31</p>
-  <p class="news__body"><a href="#" class="news__link">本文本文本文本文本文本文本文<br>
-    本文本文本文本文本文本文本文</a></p>
-</div>
-<div class="module_code first">HTML:</div>
-<pre class="prettyprint">
-&lt;div class="news--cf"&gt;
-  &lt;p class="news__date"&gt;2016.12.31&lt;/p&gt;
-  &lt;p class="news__body"&gt;&lt;a href="#" class="news__link"&gt;本文本文本文本文本文本文本文本文本文本文本文本文本文本文&lt;/a&gt;&lt;/p&gt;
+    </div>
+    <!-- /template-box -->
+    
+    <div class="template-box">
+      <h2 class="title">Date List</h2>
+      <div class="news cf">
+        <p class="news-date">2016.12.31</p>
+        <p class="news-body"><a href="#" class="news__link">本文本文本文本文本文本文本文本文本文本文本文本文本文本文</a></p>
+      </div>
+      <div class="news cf">
+        <p class="news-date">2016.12.31</p>
+        <p class="news-body"><a href="#" class="news__link">本文本文本文本文本文本文本文<br>
+          本文本文本文本文本文本文本文</a></p>
+      </div>
+      <div class="module_code first">HTML:</div>
+      <pre class="prettyprint">
+&lt;div class="news cf"&gt;
+  &lt;p class="news-date"&gt;2016.12.31&lt;/p&gt;
+  &lt;p class="news-body"&gt;&lt;a href="#" class="news__link"&gt;本文本文本文本文本文本文本文本文本文本文本文本文本文本文&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="news cf"&gt;
+  &lt;p class="news-date"&gt;2016.12.31&lt;/p&gt;
+  &lt;p class="news-body"&gt;&lt;a href="#" class="news__link"&gt;本文本文本文本文本文本文本文&lt;br&gt;本文本文本文本文本文本文本文&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 </pre>
-<div class="module_code">CSS:</div>
-<pre class="prettyprint">
-.news--cf:before,
-.news--cf:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-.news--cf:after {
-  clear: both;
-}
-.news--cf {
-  /zoom: 1;
-  border-bottom: 1px dotted #CCC;
+      <div class="module_code">CSS:</div>
+      <pre class="prettyprint">
+.news {
+  border-bottom: 1px dotted #ccc;
   margin-bottom: 5px;
   padding-bottom: 5px;
 }
-.news__date {
+.news-date {
   float: left;
   width: 7em;
 }
-.news__body {
+.news-body {
   margin-left: 7em;
   overflow: hidden;
 }
 </pre>
-</div><!-- /template-box -->
-
-<div class="template-box">
-<h2 class="title">Thumbnail Item</h2>
-<div class="entry-box--cf">
-  <figure class="entry-box__figure--float"><img src="common/img/photo01.jpg" alt=""></figure>
-  <div class="entry-box__caption">
-    <p class="entry-box__caption__title">タイトル</p>
-    <p class="entry-box__caption__body">本文本文本文本文本文本文本文本文本文</p>
-  </div>
-</div>
-<div class="module_code first">HTML:</div>
-<pre class="prettyprint">
-&lt;div class="entry-box--cf"&gt;
-  &lt;figure class="entry-box__figure--float"&gt;&lt;img src="img/thumb01.png" alt=""&gt;&lt;/figure&gt;
-  &lt;div class="entry-box__caption"&gt;
-    &lt;p class="entry-box__caption__title"&gt;タイトル&lt;/p&gt;
-    &lt;p class="entry-box__caption__body"&gt;本文本文本文本文本文本文本文本文本文&lt;/p&gt;
+    </div>
+    <!-- /template-box -->
+    
+    <div class="template-box">
+      <h2 class="title">Thumbnail Item</h2>
+      <div class="cf">
+        <div class="l-grid-02"> <a href="#">
+          <div class="entry-box cf">
+            <div class="entry-box-left"><img src="common/img/photo01.jpg" alt="" class="entry-box-figure"></div>
+            <div class="entry-box-right">
+              <p class="entry-box-title">タイトル</p>
+              <p class="entry-bo-body">本文本文本文本文本文本文本文本文本文</p>
+            </div>
+          </div>
+          </a> </div>
+        <div class="l-grid-02"> <a href="#">
+          <div class="entry-box cf">
+            <div class="entry-box-left"><img src="common/img/photo01.jpg" alt="" class="entry-box-figure"></div>
+            <div class="entry-box-right">
+              <p class="entry-box-title">タイトル</p>
+              <p class="entry-bo-body">本文本文本文本文本文本文本文本文本文</p>
+            </div>
+          </div>
+          </a> </div>
+        <div class="l-grid-02"> <a href="#">
+          <div class="entry-box cf">
+            <div class="entry-box-left"><img src="common/img/photo01.jpg" alt="" class="entry-box-figure"></div>
+            <div class="entry-box-right">
+              <p class="entry-box-title">タイトル</p>
+              <p class="entry-bo-body">本文本文本文本文本文本文本文本文本文</p>
+            </div>
+          </div>
+          </a> </div>
+      </div>
+      <!-- /.cf -->
+      
+      <div class="module_code first">HTML:</div>
+      <pre class="prettyprint">
+  &lt;div class="cf"&gt;
+    &lt;div class="l-grid-02"&gt;
+      &lt;div class="entry-box cf"&gt;
+        &lt;div class="entry-box-left"&gt;&lt;img src="common/img/photo01.jpg" alt="" class="entry-box-figure"&gt;&lt;/div&gt;
+        &lt;div class="entry-box-right"&gt;
+          &lt;p class="entry-box-title"&gt;タイトル&lt;/p&gt;
+         &lt;p class="entry-bo-body"&gt;本文本文本文本文本文本文本文本文本文&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+    &lt;div class="l-grid-02"&gt;
+      &lt;div class="entry-box cf"&gt;
+        &lt;div class="entry-box-left"&gt;&lt;img src="common/img/photo01.jpg" alt="" class="entry-box-figure"&gt;&lt;/div&gt;
+        &lt;div class="entry-box-right"&gt;
+          &lt;p class="entry-box-title"&gt;タイトル&lt;/p&gt;
+          &lt;p class="entry-bo-body"&gt;本文本文本文本文本文本文本文本文本文&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 </pre>
-<div class="module_code">CSS:</div>
-<pre class="prettyprint">
-.entry-box--cf:before,
-.entry-box--cf:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-.entry-box--cf:after {
-  clear: both;
-}
-.entry-box--cf {
-  /zoom: 1;
+      <div class="module_code">CSS:</div>
+      <pre class="prettyprint">
+.entry-box {
   display: block;
   position: relative;
 }
-.entry-box__figure--float {
+.entry-box-left {
   display: block;
   float: left;
   margin-right: 7px;
   vertical-align: top;
   text-align: center;
-  background: #EEE;
+  background: #eee;
 }
-.entry-box__caption {
+.entry-box-right {
   display: block;
   overflow: hidden;
 }
-.entry-box__caption__title {
-  font-size: 1.6em;
+.entry-box-title {
+  font-size: 1.4em;
 }
-.entry-box__caption__body {
+.entry-box-body {
   margin-top: 10px;
 }
 </pre>
-</div><!-- /template-box -->
-
+    </div>
+    <!-- /template-box -->
+    
+    <div class="template-box">
+      <h2 class="title">Thumbnail Item</h2>
+      <div class="cf">
+        <div class="l-grid-04"> <a href="#">
+          <div class="entry-box cf">
+            <div class="entry-box-top"><img src="common/img/photo01.jpg" alt="" class="entry-box-figure"></div>
+            <div class="entry-box-bottom">
+              <p class="entry-box-title">タイトル</p>
+              <p class="entry-bo-body">本文本文本文本文本文本文本文本文本文</p>
+            </div>
+          </div>
+          </a> </div>
+        <div class="l-grid-04 ml-02"> <a href="#">
+          <div class="entry-box cf">
+            <div class="entry-box-top"><img src="common/img/photo01.jpg" alt="" class="entry-box-figure"></div>
+            <div class="entry-box-bottom">
+              <p class="entry-box-title">タイトル</p>
+              <p class="entry-bo-body">本文本文本文本文本文本文本文本文本文</p>
+            </div>
+          </div>
+          </a> </div>
+        <div class="l-grid-04 ml-02"> <a href="#">
+          <div class="entry-box cf">
+            <div class="entry-box-top"><img src="common/img/photo01.jpg" alt="" class="entry-box-figure"></div>
+            <div class="entry-box-bottom">
+              <p class="entry-box-title">タイトル</p>
+              <p class="entry-bo-body">本文本文本文本文本文本文本文本文本文</p>
+            </div>
+          </div>
+          </a> </div>
+        <div class="l-grid-04 ml-02"> <a href="#">
+          <div class="entry-box cf">
+            <div class="entry-box-top"><img src="common/img/photo01.jpg" alt="" class="entry-box-figure"></div>
+            <div class="entry-box-bottom">
+              <p class="entry-box-title">タイトル</p>
+              <p class="entry-bo-body">本文本文本文本文本文本文本文本文本文</p>
+            </div>
+          </div>
+          </a> </div>
+        <div class="l-grid-04 ml-02"> <a href="#">
+          <div class="entry-box cf">
+            <div class="entry-box-top"><img src="common/img/photo01.jpg" alt="" class="entry-box-figure"></div>
+            <div class="entry-box-bottom">
+              <p class="entry-box-title">タイトル</p>
+              <p class="entry-bo-body">本文本文本文本文本文本文本文本文本文</p>
+            </div>
+          </div>
+          </a> </div>
+      </div>
+      <div class="module_code first">HTML:</div>
+      <pre class="prettyprint">
+&lt;div class="entry-box cf"&gt;
+  &lt;div class="entry-box-left"&gt;&lt;img src="common/img/photo01.jpg" alt=""&gt;&lt;/div&gt;
+  &lt;div class="entry-box-right"&gt;
+    &lt;p class="entry-box-title"&gt;タイトル&lt;/p&gt;
+    &lt;p class="entry-bo-body"&gt;本文本文本文本文本文本文本文本文本文&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+      <div class="module_code">CSS:</div>
+      <pre class="prettyprint">
+.entry-box {
+  display: block;
+  position: relative;
+}
+.entry-box-left {
+  display: block;
+  float: left;
+  margin-right: 7px;
+  vertical-align: top;
+  text-align: center;
+  background: #eee;
+}
+.entry-box-right {
+  display: block;
+  overflow: hidden;
+}
+.entry-box-title {
+  font-size: 1.4em;
+}
+.entry-box-body {
+  margin-top: 10px;
+}
+</pre>
+    </div>
+    <!-- /template-box --> 
+    
+  </div>
 </div>
-</div><!-- /container -->
+<!-- /container -->
 <div id="page-top">
   <p>Page Top</p>
 </div>

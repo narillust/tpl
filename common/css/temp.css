@@ -1,145 +1,107 @@
 @charset "UTF-8";
 
-/* =========================================
-menu
-========================================= */
-.menu:before,
-.menu:after {
-  content: "\0020";/* "\0020"は半角スペース */
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-.menu:after {
-  clear: both;
-}
-.menu {
-  /zoom: 1;
-}
-/* menu item */
-.menu__item--float {
-  float: left;
-  margin-left: 10px;
-}
-.menu__item--float:first-child {
-  margin-left: 0;
-}
-/* menu line */
-.menu__item--float--line {
-  float: left;
-  margin-left: 10px;
+/* menu separation */
+.separation {
   padding-left: 9px;
-  border-left: 1px solid #CCC;
+  border-left: 1px solid #ccc;
 }
-.menu__item--float--line:first-child {
+.separation:first-child {
   margin-left: 0;
   padding-left: 0;
   border-left: none;
 }
-/* menu icon left */
-.menu__link--icon-left--date {
-  padding-left: 10px;
+.icon-date:before {
   background: url(../img/icon-date.png) no-repeat left center;
+  background-size: 8px 9px;
+  display: inline-block;
+  content:"\0020";
+  width: 8px;
+  height: 9px;
+  margin-right: 0.2em;
+  position: relative;
+  top: -0.1em;
 }
-/* menu button */
-.menu__item--float--button {
-  float: left;
-  margin-left: 1px;
-}
-.menu__item--float--button:first-child {
-  margin-left: 0;
-}
-.menu__link--button {
-  background: #EEE;
-  display: table-cell;
-  width: 150px;
-  height: 40px;
-  vertical-align: middle;
-  text-decoration: none;
-}
-.menu__link--button:hover {
-  background-color: #DDD;
-  text-decoration: none;
-}
-/* menu button icon left */
-.menu__link--icon-left--arrow {
+.button {
   display: block;
+  background-color: #eee;
   text-align: center;
-}
-.menu__link--icon-left--arrow:before {
-  content: url(../img/arrow.png);
-  margin-right: 20px;
-  height: 40px;
-}
-/* menu button icon top date */
-.menu__link--icon-top {
-  display: block;
-  padding: 50px 20px 10px 20px;
-  background: #EEE url(../img/icon-date.png) no-repeat center 30%;
-}
-.menu__link--icon-top:hover {
-  background-color: #DDD;
   text-decoration: none;
 }
-
-/* =========================================
-news
-========================================= */
-.news--cf:before,
-.news--cf:after {
-  content: "\0020";/* "\0020"は半角スペース */
-  display: block;
-  height: 0;
-  overflow: hidden;
+.button:hover {
+  background-color: #ddd;
+  text-decoration: none;
 }
-.news--cf:after {
-  clear: both;
+.btn-icon-al-arrow {
+  background: #eee url(../img/arrow.png) no-repeat 5px center;
+  padding-left: 20px;
 }
-.news--cf {
-  /zoom: 1;
-  border-bottom: 1px dotted #CCC;
+.button-text {
+  display: table-cell;
+  vertical-align: middle;
+  height: 40px;
+}
+.btn-icon-at-date:before {
+  background: url(../img/icon-date.png) no-repeat left center;
+  background-size: 8px 9px;
+  display: inline-block;
+  content:"\0020";
+  width: 8px;
+  height: 9px;
+  margin-right: 0.2em;
+  position: relative;
+  top: -0.1em;
+}
+/* news */
+.news {
+  border-bottom: 1px dotted #ccc;
   margin-bottom: 5px;
   padding-bottom: 5px;
 }
-.news__date--float {
+.news-date {
   float: left;
   width: 7em;
 }
-.news__body {
+.news-body {
   margin-left: 7em;
   overflow: hidden;
 }
-/* entry box */
-.entry-box--cf:before,
-.entry-box--cf:after {
-  content: "\0020";/* "\0020"は半角スペース */
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-.entry-box--cf:after {
-  clear: both;
-}
-.entry-box--cf {
-  /zoom: 1;
+/* entry-box */
+.entry-box {
   display: block;
   position: relative;
+  margin-bottom: 10px;
 }
-.entry-box__figure--float {
+.entry-box-left {
   display: block;
   float: left;
   margin-right: 7px;
   vertical-align: top;
   text-align: center;
-  background: #EEE;
+  background: #eee;
 }
-.entry-box__caption {
+.entry-box-right {
   display: block;
   overflow: hidden;
 }
-.entry-box__caption__title {
+.entry-box-title {
   font-size: 1.4em;
 }
-.entry-box__caption__body {
+.entry-box-body {
   margin-top: 10px;
+}
+.entry-box-top {
+  display: block;
+  background: #eee;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.entry-box-figure {
+  width: 100%;
+}
+.entry-box-figure:hover {
+  opacity: 0.3;
+  transition-duration: 1s;
+}
+.entry-box-bottom {
+  width: 100%;
 }
