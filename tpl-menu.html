@@ -23,6 +23,8 @@
 <body onload="prettyPrint()">
 <div class="container">
   <div style="width:960px; margin:0 auto;">
+
+    <!-- MENU01 -->
     <div class="templateBox">
       <h2 class="title">Normal Menu</h2>
       <ul class="cf">
@@ -31,8 +33,8 @@
         <li class="l-inline ml-10"><a href="#">MENU01</a></li>
         <li class="l-inline ml-10"><a href="#">MENU01</a></li>
       </ul>
-      <div class="module_code first">HTML:</div>
-      <pre class="prettyprint">
+<div class="module_code first">HTML:</div>
+<pre class="prettyprint">
 &lt;ul class="cf"&gt;
   &lt;li class="l-inline"&gt;&lt;a href="#"&gt;MENU01&lt;/a&gt;&lt;/li&gt;
   &lt;li class="l-inline ml-10"&gt;&lt;a href="#"&gt;MENU01&lt;/a&gt;&lt;/li&gt;
@@ -40,7 +42,166 @@
   &lt;li class="l-inline ml-10"&gt;&lt;a href="#"&gt;MENU01&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-      <div class="module_code">CSS:</div>
+<div class="module_code">CSS(layout.css):</div>
+<pre class="prettyprint">
+/* clearfix */
+.cf:before,
+.cf:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  /zoom: 1;
+}
+/* l-inline */
+.l-inline {
+  float: left;
+}
+/* margin left */
+.ml-10 { margin-left: 10px; }
+</pre>
+</div>
+<!-- /template-box -->
+    
+    <!-- MENU02 -->
+    <div class="template-box">
+      <h2 class="title">Separator line Menu</h2>
+      <ul class="cf">
+        <li class="l-inline separation"><a href="#">MENU02</a></li>
+        <li class="l-inline ml-10 separation"><a href="#">MENU02</a></li>
+        <li class="l-inline ml-10 separation"><a href="#">MENU02</a></li>
+        <li class="l-inline ml-10 separation"><a href="#">MENU02</a></li>
+      </ul>
+<div class="module_code first">HTML:</div>
+<pre class="prettyprint">
+&lt;ul class="cf"&gt;
+  &lt;li class="l-inline separation"&gt;&lt;a href="#"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-10 separation"&gt;&lt;a href="#"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-10 separation"&gt;&lt;a href="#"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-10 separation"&gt;&lt;a href="#"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+<div class="module_code">CSS(layout.css):</div>
+<pre class="prettyprint">
+/* clearfix */
+.cf:before,
+.cf:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  /zoom: 1;
+}
+/* l-inline */
+.l-inline {
+  float: left;
+}
+/* margin left */
+.ml-10 { margin-left: 10px; }
+</pre>
+<div class="module_code">CSS(temp.css):</div>
+<pre class="prettyprint">
+/* separation */
+.separation {
+  padding-left: 9px;
+  border-left: 1px solid #ccc;
+}
+.separation:first-child {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: none;
+}
+</pre>
+</div>
+<!-- /template-box -->
+    
+    <!-- MENU03 -->
+    <div class="template-box">
+      <h2 class="title">Icon Menu</h2>
+      <ul class="cf">
+        <li class="l-inline"><a href="#" class="icon-date">MENU03</a></li>
+        <li class="l-inline ml-10"><a href="#" class="icon-date">MENU03</a></li>
+        <li class="l-inline ml-10"><a href="#" class="icon-date">MENU03</a></li>
+        <li class="l-inline ml-10"><a href="#" class="icon-date">MENU03</a></li>
+      </ul>
+<div class="module_code first">HTML:</div>
+<pre class="prettyprint">
+&lt;ul class="cf"&gt;
+  &lt;li class="l-inline"&gt;&lt;a href="#" class="icon-date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-10"&gt;&lt;a href="#" class="icon-date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-10"&gt;&lt;a href="#" class="icon-date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-10"&gt;&lt;a href="#" class="icon-date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+<div class="module_code">CSS(layout.css):</div>
+<pre class="prettyprint">
+/* clearfix */
+.cf:before,
+.cf:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  /zoom: 1;
+}
+/* l-inline */
+.l-inline {
+  float: left;
+}
+/* margin left */
+.ml-10 { margin-left: 10px; }
+</pre>
+<div class="module_code">CSS(temp.css):</div>
+<pre class="prettyprint">
+.icon-date:before {
+  background: url(../img/icon-date.png) no-repeat left center;
+  background-size: 8px 9px;
+  display: inline-block;
+  content:"\0020";
+  width: 8px;
+  height: 9px;
+  margin-right: 0.2em;
+  position: relative;
+  top: -0.1em;
+}
+</pre>
+</div>
+<!-- /template-box -->
+    
+    <!-- MENU04 -->
+    <div class="template-box">
+      <h2 class="title">Button Menu</h2>
+      <ul class="cf">
+        <li class="l-inline"><a href="#" class="button"><span class="button-text">MENU04</span></a></li>
+        <li class="l-inline ml-01"><a href="#" class="button"><span class="button-text">MENU04</span></a></li>
+        <li class="l-inline ml-01"><a href="#" class="button"><span class="button-text">MENU04</span></a></li>
+        <li class="l-inline ml-01"><a href="#" class="button"><span class="button-text">MENU04</span></a></li>
+      </ul>
+<div class="module_code first">HTML:</div>
+<pre class="prettyprint">
+&lt;ul class="cf"&gt;
+  &lt;li class="l-inline"&gt;&lt;a href="#" class="button"&gt;&lt;span class="button-text"&gt;MENU04&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-01"&gt;&lt;a href="#" class="button"&gt;&lt;span class="button-text"&gt;MENU04&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-01"&gt;&lt;a href="#" class="button"&gt;&lt;span class="button-text"&gt;MENU04&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="l-inline ml-01"&gt;&lt;a href="#" class="button"&gt;&lt;span class="button-text"&gt;MENU04&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+      <div class="module_code">CSS(layout.css):</div>
       <pre class="prettyprint">
 /* clearfix */
 .cf:before,
@@ -56,100 +217,15 @@
 .cf {
   /zoom: 1;
 }
+/* l-inline */
 .l-inline {
   float: left;
 }
-
+/* margin left */
+.ml-01 { margin-left: 1px; }
 </pre>
-    </div>
-    <!-- /template-box -->
-    
-    <div class="template-box">
-      <h2 class="title">Separator line Menu</h2>
-      <ul class="cf">
-        <li class="l-inline separation"><a href="#">MENU02</a></li>
-        <li class="l-inline ml-10 separation"><a href="#">MENU02</a></li>
-        <li class="l-inline ml-10 separation"><a href="#">MENU02</a></li>
-        <li class="l-inline ml-10 separation"><a href="#">MENU02</a></li>
-      </ul>
-      <div class="module_code first">HTML:</div>
-      <pre class="prettyprint">
-&lt;ul class="cf"&gt;
-  &lt;li class="l-inline separation"&gt;&lt;a href="#"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="l-inline ml-10 separation"&gt;&lt;a href="#"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="l-inline ml-10 separation"&gt;&lt;a href="#"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="l-inline ml-10 separation"&gt;&lt;a href="#"&gt;MENU02&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</pre>
-<div class="module_code">CSS:</div>
+<div class="module_code">CSS(temp.css):</div>
 <pre class="prettyprint">
-/* separation */
-.separation {
-  padding-left: 9px;
-  border-left: 1px solid #ccc;
-}
-.separation:first-child {
-  margin-left: 0;
-  padding-left: 0;
-  border-left: none;
-}
-</pre>
-</div>
-    <!-- /template-box -->
-    
-    <div class="template-box">
-      <h2 class="title">Icon Menu</h2>
-      <ul class="cf">
-        <li class="l-inline"><a href="#" class="icon-date">MENU03</a></li>
-        <li class="l-inline ml-10"><a href="#" class="icon-date">MENU03</a></li>
-        <li class="l-inline ml-10"><a href="#" class="icon-date">MENU03</a></li>
-        <li class="l-inline ml-10"><a href="#" class="icon-date">MENU03</a></li>
-      </ul>
-      <div class="module_code first">HTML:</div>
-      <pre class="prettyprint">
-&lt;ul class="cf"&gt;
-  &lt;li class="l-inline"&gt;&lt;a href="#" class="icon-date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="l-inline ml-10"&gt;&lt;a href="#" class="icon-date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="l-inline ml-10"&gt;&lt;a href="#" class="icon-date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="l-inline ml-10"&gt;&lt;a href="#" class="icon-date"&gt;MENU03&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</pre>
-      <div class="module_code">CSS:</div>
-      <pre class="prettyprint">
-.icon-date:before {
-  background: url(../img/icon-date.png) no-repeat left center;
-  background-size: 8px 9px;
-  display: inline-block;
-  content:"\0020";
-  width: 8px;
-  height: 9px;
-  margin-right: 0.2em;
-  position: relative;
-  top: -0.1em;
-}
-</pre>
-    </div>
-    <!-- /template-box -->
-    
-    <div class="template-box">
-      <h2 class="title">Button Menu</h2>
-      <ul class="cf">
-        <li class="l-inline"><a href="#" class="button"><span class="button-text">MENU04</span></a></li>
-        <li class="l-inline ml-01"><a href="#" class="button"><span class="button-text">MENU04</span></a></li>
-        <li class="l-inline ml-01"><a href="#" class="button"><span class="button-text">MENU04</span></a></li>
-        <li class="l-inline ml-01"><a href="#" class="button"><span class="button-text">MENU04</span></a></li>
-      </ul>
-      <div class="module_code first">HTML:</div>
-      <pre class="prettyprint">
-&lt;ul class="cf"&gt;
-  &lt;li class="l-inline"&gt;&lt;a href="#" class="button"&gt;&lt;span class="button-text"&gt;MENU04&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="l-inline ml-01"&gt;&lt;a href="#" class="button"&gt;&lt;span class="button-text"&gt;MENU04&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="l-inline ml-01"&gt;&lt;a href="#" class="button"&gt;&lt;span class="button-text"&gt;MENU04&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="l-inline ml-01"&gt;&lt;a href="#" class="button"&gt;&lt;span class="button-text"&gt;MENU04&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</pre>
-      <div class="module_code">CSS:</div>
-      <pre class="prettyprint">
 .button {
   display: block;
   background-color: #eee;
@@ -166,9 +242,10 @@
   height: 40px;
 }
 </pre>
-    </div>
-    <!-- /template-box -->
+</div>
+<!-- /template-box -->
     
+    <!-- MENU05 -->
     <div class="template-box">
       <h2 class="title">Button Menu Icon</h2>
       <ul class="cf">
@@ -181,8 +258,8 @@
         <li class="l-inline ml-01"><a href="#" class="button btn-icon-al-arrow"><span class="button-text">MEN<br>
           U05</span></a></li>
       </ul>
-      <div class="module_code first">HTML:</div>
-      <pre class="prettyprint">
+<div class="module_code first">HTML:</div>
+<pre class="prettyprint">
 &lt;ul class="cf"&gt;
   &lt;li class="l-inline"&gt;&lt;a href="#" class="button btn-icon-al-arrow"&gt;&lt;span class="button-text"&gt;MEN&lt;br&gt;U05&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li class="l-inline ml-01"&gt;&lt;a href="#" class="button btn-icon-al-arrow"&gt;&lt;span class="button-text"&gt;MEN&lt;br&gt;U05&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -190,7 +267,30 @@
   &lt;li class="l-inline ml-01"&gt;&lt;a href="#" class="button btn-icon-al-arrow"&gt;&lt;span class="button-text"&gt;MEN&lt;br&gt;U05&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-<div class="module_code">CSS:</div>
+<div class="module_code">CSS(layout.css):</div>
+<pre class="prettyprint">
+/* clearfix */
+.cf:before,
+.cf:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  /zoom: 1;
+}
+/* l-inline */
+.l-inline {
+  float: left;
+}
+/* margin left */
+.ml-01 { margin-left: 1px; }
+</pre>
+<div class="module_code">CSS(temp.css):</div>
 <pre class="prettyprint">
 .button {
   display: block;
@@ -212,9 +312,10 @@
   height: 40px;
 }
 </pre>
-    </div>
-    <!-- /template-box -->
+</div>
+<!-- /template-box -->
     
+    <!-- MENU06 -->
     <div class="template-box">
       <h2 class="title">Panel Menu</h2>
       <ul class="cf">
@@ -233,8 +334,31 @@
   &lt;li class="l-inline ml-03"&gt;&lt;a href="#" class="button btn-icon-at-date"&gt;&lt;span class="button-text"&gt;MENU06&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-      <div class="module_code">CSS:</div>
-      <pre class="prettyprint">
+<div class="module_code">CSS(layout.css):</div>
+<pre class="prettyprint">
+/* clearfix */
+.cf:before,
+.cf:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  /zoom: 1;
+}
+/* l-inline */
+.l-inline {
+  float: left;
+}
+/* margin left */
+.ml-03 { margin-left: 3px; }
+</pre>
+<div class="module_code">CSS(temp.css):</div>
+<pre class="prettyprint">
 .button {
   display: block;
   background-color: #eee;
@@ -262,9 +386,10 @@
   top: -0.1em;
 }
 </pre>
-    </div>
-    <!-- /template-box -->
+</div>
+<!-- /template-box -->
     
+    <!-- news -->
     <div class="template-box">
       <h2 class="title">Date List</h2>
       <div class="news cf">
@@ -276,8 +401,8 @@
         <p class="news-body"><a href="#" class="news__link">本文本文本文本文本文本文本文<br>
           本文本文本文本文本文本文本文</a></p>
       </div>
-      <div class="module_code first">HTML:</div>
-      <pre class="prettyprint">
+<div class="module_code first">HTML:</div>
+<pre class="prettyprint">
 &lt;div class="news cf"&gt;
   &lt;p class="news-date"&gt;2016.12.31&lt;/p&gt;
   &lt;p class="news-body"&gt;&lt;a href="#" class="news__link"&gt;本文本文本文本文本文本文本文本文本文本文本文本文本文本文&lt;/a&gt;&lt;/p&gt;
@@ -287,8 +412,25 @@
   &lt;p class="news-body"&gt;&lt;a href="#" class="news__link"&gt;本文本文本文本文本文本文本文&lt;br&gt;本文本文本文本文本文本文本文&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 </pre>
-      <div class="module_code">CSS:</div>
+      <div class="module_code">CSS(layout.css):</div>
       <pre class="prettyprint">
+/* clearfix */
+.cf:before,
+.cf:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  /zoom: 1;
+}
+</pre>
+<div class="module_code">CSS(temp.css):</div>
+<pre class="prettyprint">
 .news {
   border-bottom: 1px dotted #ccc;
   margin-bottom: 5px;
@@ -303,9 +445,10 @@
   overflow: hidden;
 }
 </pre>
-    </div>
-    <!-- /template-box -->
+</div>
+<!-- /template-box -->
     
+    <!-- entry-box -->
     <div class="template-box">
       <h2 class="title">Thumbnail Item</h2>
       <div class="cf">
@@ -314,7 +457,7 @@
             <div class="entry-box-left"><img src="common/img/photo01.jpg" alt="" class="entry-box-figure"></div>
             <div class="entry-box-right">
               <p class="entry-box-title">タイトル</p>
-              <p class="entry-bo-body">本文本文本文本文本文本文本文本文本文</p>
+              <p class="entry-box-body">本文本文本文本文本文本文本文本文本文</p>
             </div>
           </div>
           </a> </div>
@@ -323,7 +466,7 @@
             <div class="entry-box-left"><img src="common/img/photo01.jpg" alt="" class="entry-box-figure"></div>
             <div class="entry-box-right">
               <p class="entry-box-title">タイトル</p>
-              <p class="entry-bo-body">本文本文本文本文本文本文本文本文本文</p>
+              <p class="entry-box-body">本文本文本文本文本文本文本文本文本文</p>
             </div>
           </div>
           </a> </div>
@@ -332,41 +475,68 @@
             <div class="entry-box-left"><img src="common/img/photo01.jpg" alt="" class="entry-box-figure"></div>
             <div class="entry-box-right">
               <p class="entry-box-title">タイトル</p>
-              <p class="entry-bo-body">本文本文本文本文本文本文本文本文本文</p>
+              <p class="entry-box-body">本文本文本文本文本文本文本文本文本文</p>
             </div>
           </div>
           </a> </div>
       </div>
       <!-- /.cf -->
       
-      <div class="module_code first">HTML:</div>
-      <pre class="prettyprint">
-  &lt;div class="cf"&gt;
-    &lt;div class="l-grid-02"&gt;
-      &lt;div class="entry-box cf"&gt;
-        &lt;div class="entry-box-left"&gt;&lt;img src="common/img/photo01.jpg" alt="" class="entry-box-figure"&gt;&lt;/div&gt;
-        &lt;div class="entry-box-right"&gt;
-          &lt;p class="entry-box-title"&gt;タイトル&lt;/p&gt;
-         &lt;p class="entry-bo-body"&gt;本文本文本文本文本文本文本文本文本文&lt;/p&gt;
-        &lt;/div&gt;
+<div class="module_code first">HTML:</div>
+<pre class="prettyprint">
+&lt;div class="cf"&gt;
+  &lt;div class="l-grid-02"&gt;
+    &lt;div class="entry-box cf"&gt;
+      &lt;div class="entry-box-left"&gt;&lt;img src="common/img/photo01.jpg" alt="" class="entry-box-figure"&gt;&lt;/div&gt;
+      &lt;div class="entry-box-right"&gt;
+        &lt;p class="entry-box-title"&gt;タイトル&lt;/p&gt;
+       &lt;p class="entry-box-body"&gt;本文本文本文本文本文本文本文本文本文&lt;/p&gt;
       &lt;/div&gt;
-  &lt;/div&gt;
-    &lt;div class="l-grid-02"&gt;
-      &lt;div class="entry-box cf"&gt;
-        &lt;div class="entry-box-left"&gt;&lt;img src="common/img/photo01.jpg" alt="" class="entry-box-figure"&gt;&lt;/div&gt;
-        &lt;div class="entry-box-right"&gt;
-          &lt;p class="entry-box-title"&gt;タイトル&lt;/p&gt;
-          &lt;p class="entry-bo-body"&gt;本文本文本文本文本文本文本文本文本文&lt;/p&gt;
-        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+  &lt;div class="l-grid-02"&gt;
+    &lt;div class="entry-box cf"&gt;
+      &lt;div class="entry-box-left"&gt;&lt;img src="common/img/photo01.jpg" alt="" class="entry-box-figure"&gt;&lt;/div&gt;
+      &lt;div class="entry-box-right"&gt;
+        &lt;p class="entry-box-title"&gt;タイトル&lt;/p&gt;
+        &lt;p class="entry-box-body"&gt;本文本文本文本文本文本文本文本文本文&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
+&lt;/div&gt;
 </pre>
-      <div class="module_code">CSS:</div>
-      <pre class="prettyprint">
+<div class="module_code">CSS(layout.css):</div>
+<pre class="prettyprint">
+/* clearfix */
+.cf:before,
+.cf:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  /zoom: 1;
+}
+/* l-grid */
+.l-grid-02,
+.l-grid-03,
+.l-grid-04,
+.l-grid-05 {
+  float: left;
+}
+.l-grid-02 { width: 50%; }
+</pre>
+<div class="module_code">CSS(temp.css):</div>
+<pre class="prettyprint">
+/* entry-box */
 .entry-box {
   display: block;
   position: relative;
+  margin-bottom: 10px;
 }
 .entry-box-left {
   display: block;
@@ -386,10 +556,21 @@
 .entry-box-body {
   margin-top: 10px;
 }
+.entry-box-figure {
+  width: 100%;
+}
+.entry-box-figure:hover {
+  opacity: 0.3;
+  transition-duration: 1s;
+}
+.entry-box-bottom {
+  width: 100%;
+}
 </pre>
-    </div>
-    <!-- /template-box -->
+</div>
+<!-- /template-box -->
     
+    <!-- entry-box -->
     <div class="template-box">
       <h2 class="title">Thumbnail Item</h2>
       <div class="cf">
@@ -398,59 +579,134 @@
             <div class="entry-box-top"><img src="common/img/photo01.jpg" alt="" class="entry-box-figure"></div>
             <div class="entry-box-bottom">
               <p class="entry-box-title">タイトル</p>
-              <p class="entry-bo-body">本文本文本文本文本文本文本文本文本文</p>
+              <p class="entry-box-body">本文本文本文本文本文本文本文本文本文</p>
             </div>
           </div>
-          </a> </div>
+          </a>
+        </div>
         <div class="l-grid-04 ml-02"> <a href="#">
           <div class="entry-box cf">
             <div class="entry-box-top"><img src="common/img/photo01.jpg" alt="" class="entry-box-figure"></div>
             <div class="entry-box-bottom">
               <p class="entry-box-title">タイトル</p>
-              <p class="entry-bo-body">本文本文本文本文本文本文本文本文本文</p>
+              <p class="entry-box-body">本文本文本文本文本文本文本文本文本文</p>
             </div>
           </div>
-          </a> </div>
+          </a>
+        </div>
         <div class="l-grid-04 ml-02"> <a href="#">
           <div class="entry-box cf">
             <div class="entry-box-top"><img src="common/img/photo01.jpg" alt="" class="entry-box-figure"></div>
             <div class="entry-box-bottom">
               <p class="entry-box-title">タイトル</p>
-              <p class="entry-bo-body">本文本文本文本文本文本文本文本文本文</p>
+              <p class="entry-box-body">本文本文本文本文本文本文本文本文本文</p>
             </div>
           </div>
-          </a> </div>
+          </a>
+        </div>
         <div class="l-grid-04 ml-02"> <a href="#">
           <div class="entry-box cf">
             <div class="entry-box-top"><img src="common/img/photo01.jpg" alt="" class="entry-box-figure"></div>
             <div class="entry-box-bottom">
               <p class="entry-box-title">タイトル</p>
-              <p class="entry-bo-body">本文本文本文本文本文本文本文本文本文</p>
+              <p class="entry-box-body">本文本文本文本文本文本文本文本文本文</p>
             </div>
           </div>
-          </a> </div>
+          </a>
+        </div>
         <div class="l-grid-04 ml-02"> <a href="#">
           <div class="entry-box cf">
             <div class="entry-box-top"><img src="common/img/photo01.jpg" alt="" class="entry-box-figure"></div>
             <div class="entry-box-bottom">
               <p class="entry-box-title">タイトル</p>
-              <p class="entry-bo-body">本文本文本文本文本文本文本文本文本文</p>
+              <p class="entry-box-body">本文本文本文本文本文本文本文本文本文</p>
             </div>
           </div>
-          </a> </div>
+          </a>
+        </div>
       </div>
-      <div class="module_code first">HTML:</div>
-      <pre class="prettyprint">
-&lt;div class="entry-box cf"&gt;
-  &lt;div class="entry-box-left"&gt;&lt;img src="common/img/photo01.jpg" alt=""&gt;&lt;/div&gt;
-  &lt;div class="entry-box-right"&gt;
-    &lt;p class="entry-box-title"&gt;タイトル&lt;/p&gt;
-    &lt;p class="entry-bo-body"&gt;本文本文本文本文本文本文本文本文本文&lt;/p&gt;
+<div class="module_code first">HTML:</div>
+<pre class="prettyprint">
+&lt;div class="cf"&gt;
+  &lt;div class="l-grid-04"&gt; &lt;a href="#"&gt;
+    &lt;div class="entry-box cf"&gt;
+      &lt;div class="entry-box-top"&gt;&lt;img src="common/img/photo01.jpg" alt="" class="entry-box-figure"&gt;&lt;/div&gt;
+      &lt;div class="entry-box-bottom"&gt;
+        &lt;p class="entry-box-title"&gt;タイトル&lt;/p&gt;
+        &lt;p class="entry-box-body"&gt;本文本文本文本文本文本文本文本文本文&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="l-grid-04 ml-02"&gt; &lt;a href="#"&gt;
+    &lt;div class="entry-box cf"&gt;
+      &lt;div class="entry-box-top"&gt;&lt;img src="common/img/photo01.jpg" alt="" class="entry-box-figure"&gt;&lt;/div&gt;
+      &lt;div class="entry-box-bottom"&gt;
+        &lt;p class="entry-box-title"&gt;タイトル&lt;/p&gt;
+        &lt;p class="entry-box-body"&gt;本文本文本文本文本文本文本文本文本文&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="l-grid-04 ml-02"&gt; &lt;a href="#"&gt;
+    &lt;div class="entry-box cf"&gt;
+      &lt;div class="entry-box-top"&gt;&lt;img src="common/img/photo01.jpg" alt="" class="entry-box-figure"&gt;&lt;/div&gt;
+      &lt;div class="entry-box-bottom"&gt;
+        &lt;p class="entry-box-title"&gt;タイトル&lt;/p&gt;
+        &lt;p class="entry-box-body"&gt;本文本文本文本文本文本文本文本文本文&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="l-grid-04 ml-02"&gt; &lt;a href="#"&gt;
+    &lt;div class="entry-box cf"&gt;
+      &lt;div class="entry-box-top"&gt;&lt;img src="common/img/photo01.jpg" alt="" class="entry-box-figure"&gt;&lt;/div&gt;
+      &lt;div class="entry-box-bottom"&gt;
+        &lt;p class="entry-box-title"&gt;タイトル&lt;/p&gt;
+        &lt;p class="entry-box-body"&gt;本文本文本文本文本文本文本文本文本文&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="l-grid-04 ml-02"&gt; &lt;a href="#"&gt;
+    &lt;div class="entry-box cf"&gt;
+      &lt;div class="entry-box-top"&gt;&lt;img src="common/img/photo01.jpg" alt="" class="entry-box-figure"&gt;&lt;/div&gt;
+      &lt;div class="entry-box-bottom"&gt;
+        &lt;p class="entry-box-title"&gt;タイトル&lt;/p&gt;
+        &lt;p class="entry-box-body"&gt;本文本文本文本文本文本文本文本文本文&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-      <div class="module_code">CSS:</div>
-      <pre class="prettyprint">
+<div class="module_code">CSS(layout.css):</div>
+<pre class="prettyprint">
+/* clearfix */
+.cf:before,
+.cf:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  /zoom: 1;
+}
+/* l-grid */
+.l-grid-02,
+.l-grid-03,
+.l-grid-04,
+.l-grid-05 {
+  float: left;
+}
+.l-grid-04 { width: 238px; }
+</pre>
+<div class="module_code">CSS(temp.css):</div>
+<pre class="prettyprint">
 .entry-box {
   display: block;
   position: relative;
@@ -474,12 +730,13 @@
   margin-top: 10px;
 }
 </pre>
-    </div>
-    <!-- /template-box --> 
-    
+</div>
+<!-- /template-box -->
+
   </div>
 </div>
 <!-- /container -->
+
 <div id="page-top">
   <p>Page Top</p>
 </div>
